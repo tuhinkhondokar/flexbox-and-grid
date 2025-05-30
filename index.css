@@ -17,13 +17,16 @@ nav a{
     border-radius: 15px;
     padding: 10px;
 }
-.home a{
-    margin-left: 40px;
-}
 nav a:hover{
     background-color: black;
     color: aliceblue;
     font-weight: bold;
+}
+.mar1{
+    margin-left: 40px;
+}
+.mar2{
+    margin-left: 40px;
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .navigate a{
@@ -42,5 +45,21 @@ nav a:hover{
         font-weight: bold;
         flex-wrap: wrap;
         margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .mar1{
+        margin-left: 0%;
+    }
+    .mar2{
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .mar1{
+        margin-left: 0%;
+    }
+    .mar2{
+        margin-left: 0%;
     }
 }
