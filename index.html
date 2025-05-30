@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-And-Grid Combination</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .volt{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            row-gap: 30px;
+            column-gap: 30px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: cover;
+        }
+        .box-price{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            height: 80px;
+            padding: 20px;
+        }
+        @media screen and (max-width:576px) {
+            .volt{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .box-price{
+                background-color: black;
+                color: aliceblue;
+                font-weight: bold;
+                font-size: 24px;
+            }
+        }
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .volt{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .box-price{
+                background-color: aqua;
+                color: rgb(4, 125, 231);
+                font-weight: bold;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="volt">
+        <div class="box-price">each box price:$100</div>
+        <div class="box-price">each box price:$200</div>
+        <div class="box-price">each box price:$300</div>
+        <div class="box-price">each box price:$400</div>
+        <div class="box-price">each box price:$500</div>
+        <div class="box-price">each box price:$600</div>
+        <div class="box-price">each box price:$700</div>
+        <div class="box-price">each box price:$800</div>
+        <div class="box-price">each box price:$900</div>
+        <div class="box-price">each box price:$1000</div>
+        <div class="box-price">each box price:$1100</div>
+        <div class="box-price">each box price:$1200</div>
+        <div class="box-price">each box price:$1300</div>
+        <div class="box-price">each box price:$1400</div>
+        <div class="box-price">each box price:$1500</div>
+        <div class="box-price">each box price:$1600</div>
+        <div class="box-price">each box price:$1700</div>
+        <div class="box-price">each box price:$1800</div>
+        <div class="box-price">each box price:$1900</div>
+        <div class="box-price">each box price:$2000</div>
+    </div>
+    </div>
+</body>
+</html>
