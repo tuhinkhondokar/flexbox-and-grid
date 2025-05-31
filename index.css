@@ -28,6 +28,58 @@ nav a:hover{
 .mar2{
     margin-left: 40px;
 }
+.calender{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.calender-box{
+    display: flex;
+    justify-content: center;
+}
+.calender-heading{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    width: 35%;
+    color: aliceblue;
+    background-color: cadetblue;
+    padding: 15px;
+    border-radius: 20px;
+}
+.day, .date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    padding: 20px;
+    color: green;
+    font-weight: bold;
+    font-size: 24px;
+}
+.day{
+    background-color: gray;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    padding: 10px 20px;
+}
+.date:hover{
+    cursor: pointer;
+    background-color: cadetblue;
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .navigate a{
         background-color: aqua;
@@ -61,5 +113,17 @@ nav a:hover{
     }
     .mar2{
         margin-left: 0%;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .day, .date{
+        background-color: darkslategray;
+        color: aliceblue;
+    }
+}
+@media screen and (max-width: 576px) {
+    .day, .date{
+        background-color: gray;
+        color: rgb(3, 84, 87);
     }
 }
