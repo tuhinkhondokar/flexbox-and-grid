@@ -117,12 +117,14 @@ h1{
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .day, .date{
+        grid-template-columns: repeat(7, 1fr);
         background-color: darkslategray;
         color: aliceblue;
     }
 }
 @media screen and (max-width: 576px) {
     .day, .date{
+        grid-template-columns: repeat(7, 1fr);
         background-color: gray;
         color: rgb(3, 84, 87);
     }
