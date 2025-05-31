@@ -72,6 +72,51 @@ h1{
     background-color: cadetblue;
     color: aliceblue;
 }
+.bird-container img{
+    width: 100%;
+}
+.bird-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+}
+.bird-details{
+    border: 2px solid salmon;
+    border-radius: 10px;
+}
+.bird-details button{
+    background-color: cadetblue;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+.bird-details button:hover{
+    background-color: bisque;
+    color: green;
+}
+.bird-details h2{
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.basic{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.order-baby{
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -79,6 +124,18 @@ h1{
 
 
 
+@media screen and (max-width: 576px) {
+    .bird-container{
+        grid-template-columns: repeat(2, 1fr);
+        background-color: darkgray;
+        color: aliceblue;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .bird-container{
+        background-color: antiquewhite;
+    }
+}
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .navigate a{
@@ -117,14 +174,12 @@ h1{
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .day, .date{
-        grid-template-columns: repeat(7, 1fr);
         background-color: darkslategray;
         color: aliceblue;
     }
 }
 @media screen and (max-width: 576px) {
     .day, .date{
-        grid-template-columns: repeat(7, 1fr);
         background-color: gray;
         color: rgb(3, 84, 87);
     }
