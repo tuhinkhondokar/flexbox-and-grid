@@ -153,6 +153,12 @@ h4{
     .image-column{
         flex-direction: column-reverse;
     }
+    .image-column img{
+        width: 100%;
+    }
+    .image-column div{
+        width: 100%;
+    }
 }
 
 
